@@ -4,7 +4,11 @@ WORKDIR /home/app
 
 COPY ./requirements.txt .
 
-RUN pip install -r requirements.txt
+RUN python -m venv venv
+
+ENV PATH="/home/app/venv/bin:${PATH}"
+
+RUN . venv/bin/activate && pip install -r requirements.txt
 
 COPY . .
 
