@@ -14,4 +14,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD python manage.py collectstatic --no-input && python manage.py migrate && python -m gunicorn api_geek.asgi:application -k uvicorn.workers.UvicornWorker
+CMD ["python manage.py collectstatic --no-input && python manage.py migrate && python -m gunicorn api_geek.asgi:application -k uvicorn.workers.UvicornWorker"]
