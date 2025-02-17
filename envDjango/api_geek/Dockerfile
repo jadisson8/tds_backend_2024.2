@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD python -m uvicorn manage:app --host 0.0.0.0 --port 8000 --reload
+CMD python -m gunicorn api_geek.asgi:application -k uvicorn.workers.UvicornWorker
