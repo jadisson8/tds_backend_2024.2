@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/dbeaver,git,data,database,python,windows,virtualenv,venv,django,web,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=dbeaver,git,data,database,python,windows,virtualenv,venv,django,web,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/dbeaver,git,data,database,python,windows,virtualenv,venv,django,web,visualstudiocode,test
+# Edit at https://www.toptal.com/developers/gitignore?templates=dbeaver,git,data,database,python,windows,virtualenv,venv,django,web,visualstudiocode,test
 
 ### Data ###
 *.csv
@@ -380,4 +380,97 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/dbeaver,git,data,database,python,windows,virtualenv,venv,django,web,visualstudiocode
+### Test ###
+### Ignore all files that could be used to test your code and
+### you wouldn't want to push
+
+# Reference https://en.wikipedia.org/wiki/Metasyntactic_variable
+
+# Most common
+*foo
+*bar
+*fubar
+*foobar
+*baz
+
+# Less common
+*qux
+*quux
+*bongo
+*bazola
+*ztesch
+
+# UK, Australia
+*wibble
+*wobble
+*wubble
+*flob
+*blep
+*blah
+*boop
+*beep
+
+# Japanese
+*hoge
+*piyo
+*fuga
+*hogera
+*hogehoge
+
+# Portugal, Spain
+*fulano
+*sicrano
+*beltrano
+*mengano
+*perengano
+*zutano
+
+# France, Italy, the Netherlands
+*toto
+*titi
+*tata
+*tutu
+*pipppo
+*pluto
+*paperino
+*aap
+*noot
+*mies
+
+# Other names that would make sense
+*tests
+*testsdir
+*testsfile
+*testsfiles
+*test
+*testdir
+*testfile
+*testfiles
+*testing
+*testingdir
+*testingfile
+*testingfiles
+*temp
+*tempdir
+*tempfile
+*tempfiles
+*tmp
+*tmpdir
+*tmpfile
+*tmpfiles
+*lol
+
+# Ignorar todos os arquivos .json
+*.json
+
+# Ignorar as migrações do Django
+**/migrations/**
+
+# Ignorar a pasta de configurações do VSCode
+.vscode/
+
+# Ignorar os testes do Django
+**/tests/**
+tests.py
+
+# End of https://www.toptal.com/developers/gitignore/api/dbeaver,git,data,database,python,windows,virtualenv,venv,django,web,visualstudiocode,test
