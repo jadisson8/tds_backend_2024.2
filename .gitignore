@@ -473,4 +473,7 @@ $RECYCLE.BIN/
 **/tests/**
 tests.py
 
+# Ignorar todos os arquivos .ini
+*.ini
+
 # End of https://www.toptal.com/developers/gitignore/api/dbeaver,git,data,database,python,windows,virtualenv,venv,django,web,visualstudiocode,test
